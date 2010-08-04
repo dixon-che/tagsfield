@@ -1,0 +1,136 @@
+﻿/* Layout ******************/
+
+form {
+  margin:0;
+}
+
+form p {
+  overflow:hidden;
+}
+
+form label,
+form .vTextField {
+  float:left;
+}
+
+form {
+  width:35em;
+}
+
+form label {
+  width:14.5em;
+}
+
+form .vTextField {
+  width:19em;
+}
+
+.tagsfield li,
+.tagsfield p {
+  float:left;
+}
+
+.tagsfield input {
+  width:5em;
+}
+
+/* Fonts *******************/
+
+body,
+input,
+button {
+  font:small Tahoma, Verdana, Arial, sans-serif;
+}
+
+.tagsfield .output {
+  font-weight:bold;
+}
+
+/* Colors ******************/
+
+body {
+  background:white; color:black;
+}
+
+a {
+  color:#666;
+}
+
+form {
+  background:#F0F0F0;
+}
+
+input {
+  background:white; color:black;
+  border-color:#444 #AAA #AAA #444;
+}
+
+button {
+  background:#888; color:white;
+  border-color:#AAA #444 #444 #AAA;
+}
+
+fieldset {
+  border-color:#888;
+}
+
+.buttons {
+  background:#CCC;
+}
+
+/* Misc ********************/
+
+form {
+  padding-top:1px;
+}
+
+input,
+button {
+  border-style:solid; border-width:1px;
+}
+
+button {
+  padding:0 0.5em;
+}
+
+fieldset {
+  padding:0.5em;
+  border-style:solid; border-width:1px;
+}
+
+form p,
+form fieldset,
+form ul {
+  margin:0.5em;
+}
+
+.tagsfield ul {
+  padding:0; margin:0;
+}
+
+.tagsfield li {
+  list-style:none;
+  margin:0; padding:1px 1em 1px 0;
+}
+
+.tagsfield p {
+  margin:0; padding:1px;
+}
+
+.tagsfield .input img {
+  vertical-align:0;
+}
+
+* html .tagsfield .input img {
+  vertical-align:3px;
+}
+
+.tagsfield .output img,
+.tagsfield p img {
+  vertical-align:-2px;
+}
+
+.buttons {
+  padding:0.5em;
+  text-align:right;
+}

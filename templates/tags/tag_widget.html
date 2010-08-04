@@ -1,0 +1,24 @@
+{% load tagsfield_tags %}<div id="{{ id }}" class="tagsfield">
+  <ul>
+  {% for tag in value_tags %}
+    <li class="output">
+      <input type="hidden" name="{{ name }}" value="{{ tag }}" />
+      {% if show_as_url %}
+      <a href="{{ tag|tag_url }}" rel="tag">{{ tag }}</a>
+      {% else %}
+      {{ tag }}
+      {% endif %}
+      <img src="{{ media_url }}tagsfield/css/delete.png" alt="[-]" onclick="deleteTag(this);" />
+    </li>
+  {% endfor %}
+    <li class="input">
+      <input type="text" name="{{ name }}" class="suggest_tag" autocomplete="off" {% if max_length %}maxlength="{{ max_length }}"{% endif %} />
+      <img src="{{ media_url }}tagsfield/css/delete.png" alt="[-]" title="" onclick="deleteTag(this);" />
+  </ul>
+  <p><img src="{{ media_url }}tagsfield/css/add.png" alt="[+]" title="" onclick="addTag(this.parentNode.parentNode);" /></p>
+  <ul class="suggest tag" style="display:none">
+    {% for tag in tags %}<li>{{ tag }}</li>{% endfor %}
+  </ul>
+</div>
+
+<script type="text/javascript">addEvent(window, 'load', function(){initTagWidget(document.getElementById('{{ id }}'));});</script>
